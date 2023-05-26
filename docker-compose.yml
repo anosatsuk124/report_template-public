@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+    lualatex:
+        tty: true
+        platform: linux/amd64
+        image: "ghcr.io/anosatsuk124/report_template-public/lualatex:latest"
+        volumes:
+            - ./:/work
+        environment:
+            - $BIBINPUTS
+            - $BSTINPUTS

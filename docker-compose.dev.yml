@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+    lualatex:
+        tty: true
+        platform: linux/amd64
+        build:
+            dockerfile: Dockerfile
+            context: ./
+        volumes:
+            - ./:/work
+        environment:
+            - $BIBINPUTS
+            - $BSTINPUTS
