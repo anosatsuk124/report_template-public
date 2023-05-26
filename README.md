@@ -8,7 +8,7 @@ This template is used to write in Japanese.
 
 2. Put the reference files (such as `*.bib`) in the `references` directory.
 
-    - And use the reference file below:
+    - And use the reference file:
         ```latex
         \bibliography{references/ref}
         ```
